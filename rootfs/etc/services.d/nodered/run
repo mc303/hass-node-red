@@ -1,0 +1,11 @@
+#!/bin/bash
+export NODE_PATH=/opt/node_modules:/data/node_modules
+export FLOWS=flows.json
+
+options+=(--settings "/config/settings.js" --userDir "/config")
+
+cd /opt 
+
+echo "Starting Node-RED..."
+
+exec npm start -- "${options[@]}"
