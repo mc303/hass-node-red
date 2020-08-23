@@ -18,7 +18,7 @@ COPY package.json /opt/
 WORKDIR /opt
 
 # Set shell
-# SHELL ["/bin/ash", "-o", "pipefail", "-c"]
+SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 # Setup base
 RUN \
