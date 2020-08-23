@@ -23,35 +23,35 @@ SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        g++=9.2.0-r3 \
-        gcc=9.2.0-r3 \
+        g++=9.3.0-r0 \
+        gcc=9.3.0-r0 \
         libc-dev=0.7.2-r0 \
         linux-headers=4.19.36-r0 \
         make=4.2.1-r2 \
         py2-pip=18.1-r0 \
-        python2-dev=2.7.16-r3 \
+        python2-dev=2.7.18-r0 \
         tar=1.32-r1 \
     \
     && apk add --no-cache \
         libcrypto1.1=1.1.1d-r3 \
         libssl1.1=1.1.1d-r3 \
-        musl-utils=1.1.24-r1 \
-        musl=1.1.24-r1 \
+        musl-utils=1.1.24-r2 \
+        musl=1.1.24-r2 \
     \
     && apk add --no-cache \
         bash=5.0.11-r1 \
         curl=7.67.0-r0 \
         jq=1.6-r0 \
-        tzdata=2019c-r0 \
+        tzdata=2020a-r0 \
     \
     && apk add --no-cache \
-        git=2.24.1-r0 \
+        git=2.24.3-r0 \
         nodejs=12.15.0-r1 \
         npm=12.15.0-r1 \
         openssh-client=8.1_p1-r0 \
         patch=2.7.6-r6 \
         paxctl=0.9-r0 \
-        python2=2.7.16-r3 \
+        python2=2.7.18-r0 \
     \
     && paxctl -cm "$(command -v node)" \
     \
