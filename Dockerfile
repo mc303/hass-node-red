@@ -10,7 +10,9 @@ RUN echo "TARGETPLATFORM : $TARGETPLATFORM"
 
 # Copy Node-RED package.json
 COPY requirements.txt /opt/
+COPY package.json /opt/
 #ADD from https://raw.githubusercontent.com/hassio-addons/addon-node-red/master/node-red/package.json
+# && curl -s -o /opt/package.json https://raw.githubusercontent.com/hassio-addons/addon-node-red/master/node-red/package.json \
 
 # Set workdir
 WORKDIR /opt
@@ -51,7 +53,6 @@ RUN \
         paxctl=0.9-r0 \
         python2=2.7.16-r3 \
     \
-    && curl -s -o /opt/package.json https://raw.githubusercontent.com/hassio-addons/addon-node-red/master/node-red/package.json \
     \
     && paxctl -cm "$(command -v node)" \
     \
