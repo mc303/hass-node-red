@@ -53,7 +53,6 @@ RUN \
         paxctl=0.9-r0 \
         python2=2.7.16-r3 \
     \
-    \
     && paxctl -cm "$(command -v node)" \
     \
     && npm config set unsafe-perm true \
