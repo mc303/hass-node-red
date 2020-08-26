@@ -56,7 +56,7 @@
     "node-red-node-suncalc": "1.0.1",
     "node-red-node-tail": "0.1.1", 
     "node-red-node-twitter": "1.1.6",
-    "snyk": "1.383.0",
+    "snyk": "1.384.0",
     "@node-red-contrib-themes/midnight-red": "1.4.4"
   },
   "engines": {
