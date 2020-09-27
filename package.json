@@ -17,7 +17,7 @@
     "node-red-contrib-actionflows": "2.0.3",
     "node-red-contrib-alexa-home-skill": "0.1.17",
     "node-red-contrib-batcher": "1.0.0",
-    "node-red-contrib-bigtimer": "2.4.0",
+    "node-red-contrib-bigtimer": "2.5.0",
     "node-red-contrib-cast": "0.2.15",
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
