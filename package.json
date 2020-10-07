@@ -17,12 +17,12 @@
     "node-red-contrib-actionflows": "2.0.3",
     "node-red-contrib-alexa-home-skill": "0.1.17",
     "node-red-contrib-batcher": "1.0.0",
-    "node-red-contrib-bigtimer": "2.5.0",
+    "node-red-contrib-bigtimer": "2.6.0",
     "node-red-contrib-cast": "0.2.15",
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
     "node-red-contrib-eztimer": "1.2.4",
-    "node-red-contrib-home-assistant-websocket": "0.26.1",
+    "node-red-contrib-home-assistant-websocket": "0.27.1",
     "node-red-contrib-http-request": "0.1.14",
     "node-red-contrib-influxdb": "0.4.1",
     "node-red-contrib-interval-length": "0.0.4",
@@ -56,7 +56,7 @@
     "node-red-node-suncalc": "1.0.1",
     "node-red-node-tail": "0.1.1", 
     "node-red-node-twitter": "1.1.6",
-    "snyk": "1.409.1",
+    "snyk": "1.410.2",
     "@node-red-contrib-themes/midnight-red": "1.4.4"
   },
   "engines": {
