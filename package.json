@@ -18,7 +18,7 @@
     "node-red-contrib-alexa-home-skill": "0.1.17",
     "node-red-contrib-batcher": "1.0.0",
     "node-red-contrib-bigtimer": "2.6.0",
-    "node-red-contrib-cast": "0.2.15",
+    "node-red-contrib-cast": "0.2.16",
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
     "node-red-contrib-eztimer": "1.2.4",
@@ -57,7 +57,7 @@
     "node-red-node-tail": "0.1.1", 
     "node-red-node-twitter": "1.1.6",
     "node-red-contrib-deconz": "1.2.1",
-    "snyk": "1.426.0",
+    "snyk": "1.427.0",
     "@node-red-contrib-themes/midnight-red": "1.4.5"
   },
   "engines": {
