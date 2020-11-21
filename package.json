@@ -24,7 +24,7 @@
     "node-red-contrib-eztimer": "1.2.4",
     "node-red-contrib-home-assistant-websocket": "0.27.5",
     "node-red-contrib-http-request": "0.1.14",
-    "node-red-contrib-influxdb": "0.5.0",
+    "node-red-contrib-influxdb": "0.5.1",
     "node-red-contrib-interval-length": "0.0.4",
     "node-red-contrib-light-scheduler": "0.0.16",
     "node-red-contrib-looptimer": "0.0.8",
@@ -47,7 +47,7 @@
     "node-red-node-geofence": "0.1.4",
     "node-red-node-msgpack": "1.2.1",
     "node-red-node-pi-gpio": "1.2.1",
-    "node-red-node-ping": "0.2.1",
+    "node-red-node-ping": "0.2.2",
     "node-red-node-random": "0.2.0",
     "node-red-node-rbe": "0.2.9",
     "node-red-node-sentiment": "0.1.6",
@@ -57,7 +57,7 @@
     "node-red-node-tail": "0.1.1", 
     "node-red-node-twitter": "1.1.7",
     "node-red-contrib-deconz": "1.2.1",
-    "snyk": "1.428.2",
+    "snyk": "1.430.0",
     "@node-red-contrib-themes/midnight-red": "1.4.5"
   },
   "engines": {
