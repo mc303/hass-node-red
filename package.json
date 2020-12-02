@@ -35,12 +35,12 @@
     "node-red-contrib-statistics": "2.2.2",
     "node-red-contrib-stoptimer": "0.0.7",
     "node-red-contrib-sunevents": "2.0.3",
-    "node-red-contrib-telegrambot": "8.9.3",
+    "node-red-contrib-telegrambot": "8.9.4",
     "node-red-contrib-time-range-switch": "1.0.1",
     "node-red-contrib-timecheck": "1.1.0",
     "node-red-contrib-traffic": "0.2.1",
     "node-red-contrib-weekday": "0.1.0",
-    "node-red-dashboard": "2.24.1",
+    "node-red-dashboard": "2.24.2",
     "node-red-node-base64": "0.2.1",
     "node-red-node-email": "1.8.2",
     "node-red-node-feedparser": "0.1.16",
@@ -57,7 +57,7 @@
     "node-red-node-tail": "0.1.1", 
     "node-red-node-twitter": "1.1.7",
     "node-red-contrib-deconz": "1.2.1",
-    "snyk": "1.431.4",
+    "snyk": "1.433.0",
     "@node-red-contrib-themes/midnight-red": "1.4.6"
   },
   "engines": {
