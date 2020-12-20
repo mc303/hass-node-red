@@ -24,7 +24,7 @@
     "node-red-contrib-eztimer": "1.2.4",
     "node-red-contrib-home-assistant-websocket": "0.27.9",
     "node-red-contrib-http-request": "0.1.14",
-    "node-red-contrib-influxdb": "0.5.2",
+    "node-red-contrib-influxdb": "0.5.3",
     "node-red-contrib-interval-length": "0.0.4",
     "node-red-contrib-light-scheduler": "0.0.16",
     "node-red-contrib-looptimer": "0.0.8",
