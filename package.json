@@ -57,7 +57,7 @@
     "node-red-node-tail": "0.1.1", 
     "node-red-node-twitter": "1.1.7",
     "node-red-contrib-deconz": "1.2.1",
-    "snyk": "1.439.0",
+    "snyk": "1.439.1",
     "@node-red-contrib-themes/midnight-red": "1.4.7"
   },
   "engines": {
