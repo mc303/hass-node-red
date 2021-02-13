@@ -22,7 +22,7 @@ SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 # Setup base
 RUN \
-    apk add --no-cache --virtual .build-dependencies \
+    apk add --no-cache \
         g++=9.3.0-r0 \
         gcc=9.3.0-r0 \
         libc-dev=0.7.2-r0 \
@@ -82,7 +82,7 @@ RUN \
     && mkdir -p /etc/fix-attrs.d \
     && mkdir -p /etc/services.d \
     \
-    && apk del --no-cache --purge .build-dependencies \
+    && apk del --no-cache \
     && rm -fr \
         /tmp/* 
 
