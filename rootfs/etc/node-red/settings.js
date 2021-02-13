@@ -249,6 +249,8 @@ module.exports = {
     //paletteCategories: ['subflows', 'input', 'output', 'function', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
     paletteCategories: [
         "home_assistant",
+        "deconz",
+        "otgw",
         "subflows",
         "common",
         "function",
