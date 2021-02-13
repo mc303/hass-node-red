@@ -22,7 +22,7 @@ SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 # Setup base
 RUN \
-    apk add --no-cache \
+    apk add --no-cache --virtual .build-dependencies \
         g++=9.3.0-r0 \
         gcc=9.3.0-r0 \
         libc-dev=0.7.2-r0 \
@@ -30,13 +30,13 @@ RUN \
         py2-pip=18.1-r0 \
         python2-dev=2.7.18-r0 \
         tar=1.32-r1 \
+        make=4.2.1-r2 \
     \
     && apk add --no-cache \
         libcrypto1.1=1.1.1d-r3 \
         libssl1.1=1.1.1d-r3 \
         musl-utils=1.1.24-r2 \
         musl=1.1.24-r2 \
-        make=4.2.1-r2 \
     \
     && apk add --no-cache \
         bash=5.0.11-r1 \
@@ -82,7 +82,7 @@ RUN \
     && mkdir -p /etc/fix-attrs.d \
     && mkdir -p /etc/services.d \
     \
-    && apk del --no-cache \
+    && apk del --no-cache --purge .build-dependencies \
     && rm -fr \
         /tmp/* 
 
