@@ -250,7 +250,6 @@ module.exports = {
     paletteCategories: [
         "home_assistant",
         "deconz",
-        "otgw",
         "subflows",
         "common",
         "function",
