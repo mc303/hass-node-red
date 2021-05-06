@@ -28,8 +28,8 @@ RUN \
         linux-headers=5.7.8-r0 \
         make=4.3-r0 \
         py3-pip=20.3.4-r0 \
-        python3-dev=3.8.7-r0 \
-        tar=1.33-r1 \
+        python3-dev=3.8.10-r0 \
+        tar=1.34-r0 \
     \
     && apk add --no-cache \
         libcrypto1.1=1.1.1i-r0 \
@@ -39,17 +39,17 @@ RUN \
     \
     && apk add --no-cache \
         bash=5.1.0-r0 \
-        curl=7.74.0-r0 \
+        curl=7.76.1-r0 \
         jq=1.6-r1 \
         tzdata=2021a-r0 \
     \
     && apk add --no-cache \
-        git=2.30.1-r0 \
-        nodejs=14.15.4-r0 \
-        npm=14.15.4-r0 \
-        openssh-client=8.4_p1-r2 \
+        git=2.30.2-r0 \
+        nodejs=14.16.1-r1 \
+        npm=14.16.1-r1 \
+        openssh-client=8.4_p1-r3 \
         patch=2.7.6-r6 \
-        python3=3.8.7-r0 \
+        python3=3.8.10-r0 \
     \
     && npm config set unsafe-perm true \
     \
