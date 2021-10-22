@@ -11,7 +11,7 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "js-yaml": "4.1.0",
-    "node-red": "2.1.0",
+    "node-red": "2.1.1",
     "node-red-contrib-actionflows": "2.0.4",
     "node-red-contrib-alexa-home-skill": "0.1.19",
     "node-red-contrib-batcher": "1.0.0",
@@ -20,7 +20,7 @@
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
     "node-red-contrib-eztimer": "1.2.7",
-    "node-red-contrib-home-assistant-websocket": "0.36.0",
+    "node-red-contrib-home-assistant-websocket": "0.36.1",
     "node-red-contrib-http-request": "0.1.14",
     "node-red-contrib-influxdb": "0.6.1",
     "node-red-contrib-interval-length": "0.0.4",
