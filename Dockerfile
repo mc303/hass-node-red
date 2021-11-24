@@ -39,15 +39,15 @@ RUN \
     \
     && apk add --no-cache \
         bash=5.1.0-r0 \
-        curl=7.78.0-r0 \
+        curl=7.79.1-r0 \
         jq=1.6-r1 \
-        tzdata=2021a-r0 \
+        tzdata=2021e-r0 \
     \
     && apk add --no-cache \
         git=2.30.2-r0 \
-        nodejs=14.17.4-r0 \
-        npm=14.17.4-r0 \
-        openssh-client=8.4_p1-r3 \
+        nodejs=14.18.1-r0 \
+        npm=14.18.1-r0 \
+        openssh-client=8.4_p1-r4 \
         patch=2.7.6-r7 \
         python3=3.8.10-r0 \
     \
