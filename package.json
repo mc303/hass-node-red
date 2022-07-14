@@ -12,7 +12,7 @@
     "bcryptjs": "2.4.3",
     "js-yaml": "4.1.0",
     "full-icu": "1.4.0",
-    "node-red": "2.2.2",
+    "node-red": "3.0.0",
     "node-red-contrib-actionflows": "2.1.2",
     "node-red-contrib-alexa-home-skill": "0.1.19",
     "node-red-contrib-batcher": "1.0.0",
