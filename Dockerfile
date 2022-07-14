@@ -22,34 +22,34 @@ SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        g++=10.2.1_pre1-r3 \
-        gcc=10.2.1_pre1-r3 \
-        libc-dev=0.7.2-r3 \
-        linux-headers=5.7.8-r0 \
-        make=4.3-r0 \
-        py3-pip=20.3.4-r0 \
-        python3-dev=3.8.10-r0 \
-        tar=1.34-r0 \
+        g++ \
+        gcc \
+        libc-dev \
+        linux-headers \
+        make \
+        py3-pip \
+        python3-dev \
+        tar \
     \
     && apk add --no-cache \
-        libcrypto1.1=1.1.1i-r0 \
-        libssl1.1=1.1.1i-r0 \
-        musl-utils=1.2.2_pre7-r0 \
-        musl=1.2.2-r1 \
+        libcrypto1.1 \
+        libssl1.1 \
+        musl-utils \
+        musl \
     \
     && apk add --no-cache \
-        bash=5.1.0-r0 \
-        curl=7.79.1-r0 \
-        jq=1.6-r1 \
-        tzdata=2021e-r0 \
+        bash \
+        curl \
+        jq \
+        tzdata \
     \
     && apk add --no-cache \
-        git=2.30.2-r0 \
-        nodejs=14.18.1-r0 \
-        npm=14.18.1-r0 \
-        openssh-client=8.4_p1-r4 \
-        patch=2.7.6-r7 \
-        python3=3.8.10-r0 \
+        git \
+        nodejs \
+        npm \
+        openssh-client \
+        patch \
+        python3 \
     \
     && npm config set unsafe-perm true \
     \
@@ -80,6 +80,9 @@ RUN \
     \
     && apk del --no-cache --purge .build-dependencies \
     && rm -fr \
+        /root/.cache \
+        /root/.npm \
+        /root/.nrpmrc \
         /tmp/*
 
 
