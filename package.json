@@ -55,7 +55,7 @@
     "node-red-node-suncalc": "1.0.1",
     "node-red-node-tail": "0.3.2", 
     "node-red-node-twitter": "1.2.0",
-    "node-red-contrib-zigbee2mqtt": "2.3.2",
+    "node-red-contrib-zigbee2mqtt": "2.4.2",
     "node-red-contrib-sun-position": "2.1.1",
     "node-red-contrib-time-controller": "0.0.17",
     "@node-red-contrib-themes/midnight-red": "2.2.3"
