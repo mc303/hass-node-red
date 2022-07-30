@@ -27,7 +27,7 @@
     "node-red-contrib-interval-length": "0.0.6",
     "node-red-contrib-light-scheduler": "0.0.18",
     "node-red-contrib-looptimer": "0.0.8",
-    "node-red-contrib-modbus": "5.21.2",
+    "node-red-contrib-modbus": "5.22.0",
     "node-red-contrib-moment": "4.0.0",
     "node-red-contrib-schedex": "1.10.7",
     "node-red-contrib-state-machine": "1.2.0",
@@ -55,7 +55,7 @@
     "node-red-node-suncalc": "1.0.1",
     "node-red-node-tail": "0.3.2", 
     "node-red-node-twitter": "1.2.0",
-    "node-red-contrib-zigbee2mqtt": "2.4.2",
+    "node-red-contrib-zigbee2mqtt": "2.6.1",
     "node-red-contrib-sun-position": "2.1.1",
     "node-red-contrib-time-controller": "0.0.17",
     "@node-red-contrib-themes/midnight-red": "2.2.3"
