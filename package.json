@@ -38,7 +38,7 @@
     "node-red-contrib-weekday": "0.1.0",
     "node-red-dashboard": "3.2.0",
     "node-red-node-base64": "0.3.0",
-    "node-red-node-email": "1.18.1",
+    "node-red-node-email": "1.18.2",
     "node-red-node-feedparser": "0.3.0",
     "node-red-node-ping": "0.3.3",
     "node-red-node-smooth": "0.1.2",
@@ -46,7 +46,7 @@
     "node-red-contrib-zigbee2mqtt": "2.6.4",
     "node-red-contrib-sun-position": "2.1.1",
     "node-red-contrib-time-controller": "0.0.17",
-    "node-red-contrib-power-monitor": "1.2.0",
+    "node-red-contrib-power-monitor": "1.2.1",
     "@node-red-contrib-themes/midnight-red": "2.2.3"
   },
   "engines": {
