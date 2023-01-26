@@ -8,7 +8,7 @@ RUN echo "TARGETPLATFORM : $TARGETPLATFORM"
 
 
 # Copy Node-RED package.json
-COPY requirements.txt /opt/
+# COPY requirements.txt /opt/
 COPY package.json /opt/
 #ADD from https://raw.githubusercontent.com/hassio-addons/addon-node-red/master/node-red/package.json
 # && curl -s -o /opt/package.json https://raw.githubusercontent.com/hassio-addons/addon-node-red/master/node-red/package.json \
@@ -52,8 +52,6 @@ RUN \
         python3 \
     \
     && npm config set unsafe-perm true \
-    \
-    && pip install --no-cache-dir -r /opt/requirements.txt \
     \
     && npm install \
         --no-audit \
