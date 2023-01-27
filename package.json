@@ -31,7 +31,7 @@
     "node-red-contrib-statistics": "2.2.2",
     "node-red-contrib-stoptimer": "0.0.7",
     "node-red-contrib-sunevents": "3.1.1",
-    "node-red-contrib-telegrambot": "14.8.7",
+    "node-red-contrib-telegrambot": "15.0.1",
     "node-red-contrib-time-range-switch": "1.2.0",
     "node-red-contrib-timecheck": "1.1.0",
     "node-red-contrib-traffic": "0.2.1",
@@ -47,6 +47,7 @@
     "node-red-contrib-sun-position": "2.1.1",
     "node-red-contrib-time-controller": "0.0.17",
     "node-red-contrib-power-monitor": "1.2.1",
+    "node-red-contrib-toggle:  0.1.1",
     "@node-red-contrib-themes/midnight-red": "2.2.3"
   },
   "engines": {
