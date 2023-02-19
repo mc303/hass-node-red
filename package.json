@@ -14,7 +14,7 @@
     "full-icu": "1.5.0",
     "node-red": "3.0.2",
     "node-red-contrib-batcher": "1.0.0",
-    "node-red-contrib-bigtimer": "2.8.3",
+    "node-red-contrib-bigtimer": "2.8.5",
     "node-red-contrib-cast": "0.2.17",
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
