@@ -38,7 +38,7 @@
     "node-red-contrib-weekday": "0.1.0",
     "node-red-dashboard": "3.5.0",
     "node-red-node-base64": "0.3.0",
-    "node-red-node-email": "2.0.0",
+    "node-red-node-email": "2.0.1",
     "node-red-node-feedparser": "0.3.0",
     "node-red-node-ping": "0.3.3",
     "node-red-node-smooth": "0.1.2",
