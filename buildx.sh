@@ -6,16 +6,16 @@
 
 DOCKER_USER_REPO=node-red/node-red 
 DOCKER_API_URL=https://api.github.com/repos/${DOCKER_USER_REPO}/releases/latest
-CONTAINER_VERSION=$(curl --silent ${DOCKER_API_URL} | grep -Po '"tag_name": "\K.*\d')
+CONTAINER_VERSION=$(curl --silent ${DOCKER_API_URL} | jq -r '.tag_name')
 # CONTAINER_CURRENT_VERSION=$(docker run --rm quay.io/skopeo/stable list-tags docker://ghcr.io/mc303/caddy-transip | jq '.Tags[-1]' | tr -d '"')
 CONTAINER_NAME="ghcr.io/mc303/hass-node-red:latest"
-CONTAINER_NAME_TAG_VERSION="ghcr.io/mc303/hass-node-red:${CONTAINER_VERSION:1}"
+CONTAINER_NAME_TAG_VERSION="ghcr.io/mc303/hass-node-red:${CONTAINER_VERSION}"
 BUIILDX_REPO='build-hass-node-red'
 BUILD_PLATFORM="linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64"
 
 echo ${DOCKER_USER_REPO}
 echo ${DOCKER_API_URL}
-echo ${CONTAINER_VERSION:1}
+echo ${CONTAINER_VERSION}
 # echo ${CADDY_CURRENT_VERSION}
 echo ${DOCKER_REPO}
 echo ${CONTAINER_NAME_TAG_VERSION}
