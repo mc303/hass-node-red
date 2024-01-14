@@ -19,7 +19,7 @@
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
     "node-red-contrib-eztimer": "1.2.7",
-    "node-red-contrib-home-assistant-websocket": "0.62.2",
+    "node-red-contrib-home-assistant-websocket": "0.62.3",
     "node-red-contrib-http-request": "0.1.14",
     "node-red-contrib-influxdb": "0.7.0",
     "node-red-contrib-light-scheduler": "0.0.18",
@@ -49,7 +49,7 @@
     "node-red-contrib-power-monitor": "1.2.1",
     "node-red-contrib-toggle": "0.1.1",
     "thingzi-logic-timers": "1.4.5",
-    "thingzi-logic-climate": "1.0.0",
+    "thingzi-logic-climate": "1.0.3",
     "@node-red-contrib-themes/midnight-red": "2.2.3"
   },
   "engines": {
