@@ -49,7 +49,7 @@
     "node-red-contrib-power-monitor": "1.2.3",
     "node-red-contrib-toggle": "0.1.1",
     "thingzi-logic-timers": "1.4.5",
-    "thingzi-logic-climate": "1.1.0",
+    "thingzi-logic-climate": "1.1.1",
     "@node-red-contrib-themes/midnight-red": "2.2.3"
   },
   "engines": {
