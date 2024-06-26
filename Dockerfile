@@ -1,4 +1,4 @@
-ARG BUILD_FROM=alpine:3.15.0
+ARG BUILD_FROM=alpine:3.18.0
 
 FROM ${BUILD_FROM}
 
@@ -50,8 +50,6 @@ RUN \
         openssh-client \
         patch \
         python3 \
-    \
-    && npm config set unsafe-perm true \
     \
     && npm install \
         --no-audit \
