@@ -85,6 +85,10 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
+# Health check
+# HEALTHCHECK --start-period=10m \
+#     CMD curl --fail http://127.0.0.1:46836 || exit 1
+
 # Entrypoint & CMD
 ENTRYPOINT ["/init"]
 
