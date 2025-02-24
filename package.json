@@ -9,7 +9,7 @@
     "start": "node $NODE_OPTIONS node_modules/node-red/red.js"
   },
   "dependencies": {
-    "bcryptjs": "3.0.0",
+    "bcryptjs": "3.0.2",
     "js-yaml": "4.1.0",
     "full-icu": "1.5.0",
     "node-red": "4.0.9",
