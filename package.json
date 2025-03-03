@@ -48,7 +48,7 @@
     "node-red-contrib-time-controller": "0.0.17",
     "node-red-contrib-power-monitor": "1.2.3",
     "node-red-contrib-toggle": "0.1.1",
-    "thingzi-logic-timers": "1.4.5",
+    "thingzi-logic-timers": "1.4.6",
     "thingzi-logic-climate": "1.1.1",
     "@node-red-contrib-themes/midnight-red": "2.2.3"
   },
