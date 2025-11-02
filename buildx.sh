@@ -11,7 +11,7 @@ CONTAINER_VERSION=$(curl --silent ${DOCKER_API_URL} | jq -r '.tag_name')
 CONTAINER_NAME="ghcr.io/mc303/hass-node-red:latest"
 CONTAINER_NAME_TAG_VERSION="ghcr.io/mc303/hass-node-red:${CONTAINER_VERSION}"
 BUIILDX_REPO='build-hass-node-red'
-BUILD_PLATFORM="linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64"
+BUILD_PLATFORM="linux/amd64,linux/arm64"
 
 echo ${DOCKER_USER_REPO}
 echo ${DOCKER_API_URL}
