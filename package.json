@@ -9,7 +9,7 @@
     "start": "node $NODE_OPTIONS node_modules/node-red/red.js"
   },
   "dependencies": {
-    "bcryptjs": "3.0.2",
+    "bcryptjs": "3.0.3",
     "js-yaml": "4.1.0",
     "full-icu": "1.5.0",
     "node-red": "4.1.1",
@@ -19,7 +19,7 @@
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
     "node-red-contrib-eztimer": "1.2.7",
-    "node-red-contrib-home-assistant-websocket": "0.79.1",
+    "node-red-contrib-home-assistant-websocket": "0.79.2",
     "node-red-contrib-http-request": "0.1.14",
     "node-red-contrib-influxdb": "0.7.0",
     "node-red-contrib-light-scheduler": "0.0.19",
