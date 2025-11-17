@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "bcryptjs": "3.0.3",
-    "js-yaml": "4.1.0",
+    "js-yaml": "4.1.1",
     "full-icu": "1.5.0",
     "node-red": "4.1.1",
     "node-red-contrib-batcher": "1.0.0",
@@ -19,7 +19,7 @@
     "node-red-contrib-counter": "0.1.6",
     "node-red-contrib-dsm": "0.14.1",
     "node-red-contrib-eztimer": "1.2.7",
-    "node-red-contrib-home-assistant-websocket": "0.79.4",
+    "node-red-contrib-home-assistant-websocket": "0.80.3",
     "node-red-contrib-http-request": "0.1.14",
     "node-red-contrib-influxdb": "0.7.0",
     "node-red-contrib-light-scheduler": "0.0.19",
