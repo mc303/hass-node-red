@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+set -e
+
+cleanup() {
+    docker buildx rm ${BUIILDX_REPO} 2>/dev/null || true
+}
+trap cleanup EXIT
 
 # DOCKER_REPO="ghcr.io/mc303/hass-node-red:latest"
 # BUIILDX_REPO='buildhassnodered'
@@ -33,9 +39,6 @@ docker buildx use ${BUIILDX_REPO}
 
 #build multiplatform docker image
 docker buildx build . --platform=${BUILD_PLATFORM} --tag ${CONTAINER_NAME} --tag ${CONTAINER_NAME_TAG_VERSION} --push
-
-#remove multiplatform environment
-docker buildx rm ${BUIILDX_REPO}
 
 
 
