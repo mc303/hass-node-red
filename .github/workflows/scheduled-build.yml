@@ -1,0 +1,56 @@
+name: Scheduled Build and Update
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install npm-check-updates
+        run: npm install -g npm-check-updates jq
+
+      - name: Check for package updates
+        id: check-updates
+        run: |
+          echo "check for new package versions in package.json"
+          UPGRADE="$(ncu -u --jsonUpgraded | jq -c .)"
+          
+          echo "result ncu command:"
+          echo "ncu -u --jsonUpgraded | jq: ${UPGRADE}"
+          
+          if [ "${UPGRADE}" != "{}" ]; then
+            echo "updates_found=true" >> $GITHUB_OUTPUT
+          else
+            echo "updates_found=false" >> $GITHUB_OUTPUT
+            echo "no update is needed. no new packages found for package.json.....!!"
+          fi
+
+      - name: Commit and push package.json updates
+        if: steps.check-updates.outputs.updates_found == 'true'
+        run: |
+          git config --global user.email "daniel@buonocore.nl"
+          git config --global user.name "mc303"
+          git add package.json
+          git commit -m "Update package.json"
+          git push origin master
+
+      - name: Run buildx
+        if: steps.check-updates.outputs.updates_found == 'true'
+        run: bash buildx.sh
