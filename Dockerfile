@@ -30,6 +30,7 @@ RUN \
         py3-pip \
         python3-dev \
         tar \
+        xz \
     \
     && apk add --no-cache \
         libcrypto3 \
