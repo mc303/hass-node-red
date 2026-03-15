@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  packages: write
 
 jobs:
   build-and-update:
@@ -50,6 +51,14 @@ jobs:
           git add package.json
           git commit -m "Update package.json"
           git push origin master
+
+      - name: Log in to GitHub Container Registry
+        if: steps.check-updates.outputs.updates_found == 'true'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run buildx
         if: steps.check-updates.outputs.updates_found == 'true'
