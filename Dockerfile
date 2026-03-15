@@ -70,9 +70,8 @@ RUN \
     && if [ "$TARGETPLATFORM" = "linux/arm64" ] ; then XARCH="aarch64" ; fi \
     \
     && cd /tmp \
-    # FIX: s6-overlay v3 requires BOTH the 'noarch' package AND the architecture package
-    && curl -sL -o /tmp/s6-overlay-noarch.tar.xz "https://github.com/just-containers/s6-overlay/releases/download/v3.2.1.0/s6-overlay-noarch.tar.xz" \
-    && curl -sL -o /tmp/s6-overlay-${XARCH}.tar.xz "https://github.com/just-containers/s6-overlay/releases/download/v3.2.1.0/s6-overlay-${XARCH}.tar.xz" \
+    && curl -fsSL -o /tmp/s6-overlay-noarch.tar.xz "https://github.com/just-containers/s6-overlay/releases/download/v3.2.1.0/s6-overlay-noarch.tar.xz" \
+    && curl -fsSL -o /tmp/s6-overlay-${XARCH}.tar.xz "https://github.com/just-containers/s6-overlay/releases/download/v3.2.1.0/s6-overlay-${XARCH}.tar.xz" \
     && tar -C / -Jxpf /tmp/s6-overlay-noarch.tar.xz \
     && tar -C / -Jxpf /tmp/s6-overlay-${XARCH}.tar.xz \
     \
