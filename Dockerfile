@@ -92,7 +92,7 @@ COPY rootfs /
 RUN chmod +x \
     /etc/s6-overlay/s6-rc.d/nodered/run \
     /etc/s6-overlay/s6-rc.d/nodered/finish \
-    /etc/s6-overlay/init.d/node-red-init
+    /etc/cont-init.d/99-node-red.sh
 
 # Health check
 # HEALTHCHECK --start-period=10m \

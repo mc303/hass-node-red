@@ -1,8 +1,11 @@
 #!/bin/bash
 
+echo "node-red-init: starting initialization..."
+
 # Ensure configuration exists
 if [ ! -d "/config/nodes" ]
 then
+    echo "node-red-init: creating /config directory"
     mkdir -p /config/nodes 
 
     # Copy in template files
@@ -13,5 +16,7 @@ then
     id=$(node -e "console.log((1+Math.random()*4294967295).toString(16));")
     sed -i "s/%%ID%%/${id}/" "/config/flows.json"
 
-    echo "First container startup copying settings"
+    echo "node-red-init: First container startup copying settings"
 fi
+
+echo "node-red-init: initialization complete"
