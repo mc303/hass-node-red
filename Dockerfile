@@ -89,7 +89,10 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
-RUN chmod +x /etc/services.d/nodered/run /etc/services.d/nodered/finish
+RUN chmod +x \
+    /etc/s6-overlay/s6-rc.d/nodered/run \
+    /etc/s6-overlay/s6-rc.d/nodered/finish \
+    /etc/s6-overlay/init.d/node-red-init
 
 # Health check
 # HEALTHCHECK --start-period=10m \

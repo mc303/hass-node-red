@@ -14,13 +14,4 @@ then
     sed -i "s/%%ID%%/${id}/" "/config/flows.json"
 
     echo "First container startup copying settings"
-# else
-#     echo "-- Not first container startup --"
 fi
-
-
-
-
-
-
-

@@ -1,0 +1,5 @@
+#!/bin/bash
+# Exit code 256 means the process was killed by a signal
+if [ "$1" -eq 256 ]; then
+    s6-svscanctl -t /var/run/s6/services
+fi
