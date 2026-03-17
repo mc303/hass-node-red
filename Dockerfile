@@ -89,6 +89,8 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
+RUN chmod +x /etc/services.d/nodered/run /etc/services.d/nodered/finish
+
 # Health check
 # HEALTHCHECK --start-period=10m \
 #     CMD curl --fail http://127.0.0.1:46836 || exit 1
