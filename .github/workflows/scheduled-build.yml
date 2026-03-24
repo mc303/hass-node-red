@@ -25,7 +25,7 @@ jobs:
           node-version: '20'
 
       - name: Install npm-check-updates
-        run: npm install -g npm-check-updates jq
+        run: npm install -g npm-check-updates
 
       - name: Check for package updates
         id: check-updates
